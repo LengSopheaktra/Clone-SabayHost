@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  background-size: 400% 400%;
+  animation: gradientMove 10s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.container11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0, 25);
+  animation: cardAppear 1s ease;
+  transition: 0.3s;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transition: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transition: translateY(0px);
+  }
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: white;
+  background: rgb(95, 211, 159);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0, 3);
+}
+
+.card h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+.btn-home {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 28px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  background: rgb(95, 211, 159);
+  transition: 0.3s;
+}
+
+.btn-home:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0, 3);
+}

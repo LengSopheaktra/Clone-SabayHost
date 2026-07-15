@@ -1,0 +1,292 @@
+1. Named Colors
+
+   color: red;
+   color: blue;
+   color: green;
+   color: black;
+   color: white;
+   color: gray;
+   color: orange;
+   color: purple;
+   color: pink;
+   color: cyan;
+   color: gold;
+
+Example
+
+h1{
+color: red;
+} 2. HEX Color
+color: #ff0000;
+color: #00ff00;
+color: #0000ff;
+color: #ffffff;
+color: #000000;
+
+Example
+
+body{
+background: #121212;
+} 3. RGB
+color: rgb(255,0,0);
+color: rgb(0,255,0);
+color: rgb(0,0,255);
+
+Example
+
+p{
+color: rgb(100,150,255);
+} 4. RGBA (Opacity)
+background: rgba(255,0,0,0.5);
+
+Opacity ranges from
+
+0 = invisible
+1 = solid
+
+Example
+
+div{
+background: rgba(0,0,0,0.5);
+} 5. HSL
+color: hsl(0,100%,50%);
+color: hsl(120,100%,50%);
+color: hsl(240,100%,50%); 6. HSLA
+background: hsla(200,100%,50%,0.5); 7. Transparent
+background: transparent; 8. CurrentColor
+
+Uses the current text color.
+
+border: 2px solid currentColor;
+Background
+Solid Color
+background: blue;
+
+or
+
+background-color: blue;
+Linear Gradient
+Left → Right
+background: linear-gradient(to right, red, blue);
+Top → Bottom
+background: linear-gradient(to bottom, red, blue);
+Angle
+background: linear-gradient(45deg, red, blue);
+Three Colors
+background: linear-gradient(red, yellow, green);
+Four Colors
+background: linear-gradient(
+red,
+orange,
+yellow,
+green
+);
+Percentage Stops
+background: linear-gradient(
+red 10%,
+blue 60%,
+green 100%
+);
+Radial Gradient
+
+Circle
+
+background: radial-gradient(red, blue);
+
+Ellipse
+
+background: radial-gradient(ellipse, red, blue);
+
+Circle
+
+background: radial-gradient(circle, red, yellow, green);
+Conic Gradient
+background: conic-gradient(
+red,
+yellow,
+green,
+blue
+);
+
+Like a color wheel.
+
+Repeating Linear Gradient
+background: repeating-linear-gradient(
+45deg,
+red 0px,
+red 20px,
+blue 20px,
+blue 40px
+);
+Repeating Radial Gradient
+background: repeating-radial-gradient(
+red,
+yellow 10%,
+green 20%
+);
+Repeating Conic Gradient
+background: repeating-conic-gradient(
+red 0deg 20deg,
+blue 20deg 40deg
+);
+Background Image
+background-image: url(image.jpg);
+Multiple Backgrounds
+background:
+url(stars.png),
+linear-gradient(black, navy);
+Background Size
+background-size: cover;
+background-size: contain;
+background-size: 100%;
+background-size: 300px 200px;
+Background Position
+background-position: center;
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+
+Custom
+
+background-position: 100px 50px;
+Background Repeat
+background-repeat: repeat;
+background-repeat: no-repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+Background Attachment
+background-attachment: fixed;
+background-attachment: scroll;
+background-attachment: local;
+Background Clip
+background-clip: border-box;
+background-clip: padding-box;
+background-clip: content-box;
+background-clip: text;
+
+Gradient Text
+
+background: linear-gradient(red, blue);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+Background Origin
+background-origin: border-box;
+background-origin: padding-box;
+background-origin: content-box;
+Background Blend Mode
+background-blend-mode: multiply;
+background-blend-mode: screen;
+background-blend-mode: overlay;
+background-blend-mode: darken;
+background-blend-mode: lighten;
+CSS Color Functions
+rgb()
+rgba()
+hsl()
+hsla()
+
+Modern CSS also supports:
+
+oklch()
+oklab()
+lab()
+lch()
+color()
+Opacity
+opacity: 0.5;
+Box Shadow
+box-shadow: 0 0 20px red;
+
+Multiple
+
+box-shadow:
+0 0 10px red,
+0 0 30px blue;
+Text Shadow
+text-shadow: 2px 2px 10px black;
+
+Glow
+
+text-shadow:
+0 0 10px cyan,
+0 0 20px cyan;
+Border Color
+border: 2px solid red;
+border-color: blue;
+Outline Color
+outline: 2px solid green;
+Filter Color Effects
+filter: grayscale(100%);
+filter: brightness(120%);
+filter: contrast(150%);
+filter: saturate(200%);
+filter: hue-rotate(90deg);
+filter: blur(5px);
+filter: invert(100%);
+filter: sepia(100%);
+Common Gradient Examples
+Instagram
+background: linear-gradient(
+45deg,
+#feda75,
+#fa7e1e,
+#d62976,
+#962fbf,
+#4f5bd5
+);
+Sunset
+background: linear-gradient(
+to right,
+#ff512f,
+#f09819
+);
+Ocean
+background: linear-gradient(
+to right,
+#2193b0,
+#6dd5ed
+);
+Purple
+background: linear-gradient(
+to right,
+#8e2de2,
+#4a00e0
+);
+Fire
+background: linear-gradient(
+to right,
+#ff512f,
+#dd2476
+);
+Neon
+background: linear-gradient(
+90deg,
+cyan,
+magenta,
+yellow
+);
+Background Shorthand
+
+Instead of writing each property separately:
+
+background:
+linear-gradient(to right, #667eea, #764ba2)
+center / cover
+no-repeat
+fixed;
+
+…or create a new repository on the command line
+echo "# Clone-SabayHost" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LengSopheaktra/Clone-SabayHost.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/LengSopheaktra/Clone-SabayHost.git
+git branch -M main
+git push -u origin main

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SabayHOST</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/LogoSabayHost.png">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top popins " data-aos-offset="750"
+        data-aos="zoom-in-down" data-aos-delay="10" data-aos-duration="1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/Logo.png" alt=""></a>
+            <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+
+                    <li class="nav-item">
+                        <a data-id="home" class="nav-link fw-bold fs-6 ms-3" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-id="about" class="nav-link fw-bold fs-6 ms-3" aria-current="page"
+                            href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-id="shared" class="nav-link fw-bold fs-6 ms-3" aria-current="page"
+                            href="shared.html">Shared</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-id="cloud_vps" class="nav-link fw-bold  fs-6 ms-3 " aria-current="page"
+                            href="cloud_vps.html">Cloud
+                            VPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-id="cloud_vds" class="nav-link fw-bold  fs-6 ms-3 " aria-current="page"
+                            href="cloud_vds.html">Cloud
+                            VDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-id="dedicated_servers" class="nav-link fw-bold fs-6 ms-3  " aria-current="page"
+                            href="dedicated_dervers.html">Dedicated
+                            Servers
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+
+                    <i class="bi bi-search ms-3"></i>
+
+                    <button class="Loign ms-4" type="loign">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="box-navbar box-navbar-f">
+        <nav class="navbar   small-navbar navbar-expand-lg  bg-transparent popins ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#"><img src="image/Logo.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-f fs-6 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-f-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-collapse-f rounded-4 " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold fs-6 ms-3  text-white" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold fs-6 ms-3  text-white" aria-current="page"
+                                href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold fs-6 ms-3  text-white" aria-current="page"
+                                href="shared.html">Shared</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold  fs-6 ms-3  text-white " aria-current="page"
+                                href="cloud_vps.html">Cloud
+                                VPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold  fs-6 ms-3   text-white" aria-current="page"
+                                href="cloud_vds.html">Cloud
+                                VDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold fs-6 ms-3  text-white " aria-current="page"
+                                href="dedicated_dervers.html">Dedicated
+                                Servers
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+
+                        <i class="bi bi-search ms-3"></i>
+
+                        <button class="Loign ms-4 " type="loign">Login</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <p class="text-menu text-white popins fw-bold fs-2 ">Configure your VDS</p>
+    </div>
+
+
+
+
+    <section id="configure">
+        <div class="main-content">
+            <div class="shared-content ">
+                <div class="box-item item-home box-Configure   pt-5">
+                    <div class="item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="100">
+                        <div class="box-icon">
+                            <!-- <i class="bi bi-pc-display-horizontal "></i> -->
+                            <i class="bi bi-share-fill"></i>
+                            <!-- <i class="bi bi-pc-display"></i> -->
+                        </div>
+                        <p class="text-center"><span class="fw-bold fs-3 popins">Configure your VDS</span>
+                        <p><br>
+                            <hr>
+                        <div class="box-1-2">
+                            <div class="box-1">
+                                <p class="fw-bold fs-3 ps-5">Cloud VDS M</p>
+                            </div>
+                            <div class="box-2">
+                                <p class="text-center Monthly">Monthly Base Price $78.59</p>
+                                <p class="text-center No-Setup">No Setup Fee</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class=""><span class="fw-bold fs-3 popins">1. Select your term length</span>
+                        <p>
+                        <div class="main_check">
+                            <button onclick="termCheck(1)"  class="check_box">
+                                <input id="termCheck1"  value="3Months" type="checkbox" name="check">
+                                <label for="">3 Months</label>
+                            </button>
+                            <button onclick="termCheck(2)" class="check_box">
+                                <input id="termCheck2"  value="6Months" type="checkbox" name="check">
+                                <label for="">6 Months</label>
+                            </button>
+                            <button onclick="termCheck(3)" class="check_box">
+                                <input checked id="termCheck3"  value="year" type="checkbox" name="check">
+                                <label for="">12 Months</label>
+                            </button>
+                        </div>
+                        <hr>
+                        <p class=""><span class="fw-bold fs-3 popins">2. Region</span>
+                        <p>
+                            <label class="os-option">
+                                <input id="reginCheck1" value="0.00" onclick="reginCheck(1)" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">European Union</span>
+                                <span class="os-badge">Free</span>
+                                <span class="os-price"></span>
+
+                            </label>
+                            <label class="os-option">
+                                <input id="reginCheck2" value="2.80" onclick="reginCheck(2)" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">Asia (Singapore) </span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$2.8 per month</span>
+
+                            </label>
+                            <label class="os-option">
+                                <input id="reginCheck3" value="4.80" onclick="reginCheck(3)" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">Asia (Cambodia)</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">
+                                    $4.8 per month</span>
+
+                            </label>
+                            <label class="os-option">
+                                <input id="reginCheck4" value="1.80" onclick="reginCheck(4)" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">Asia (Japan)</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">
+                                    $1.8 per month</span>
+
+                            </label>
+                            <label class="os-option">
+                                <input id="reginCheck5" value="1.46" onclick="reginCheck(5)" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">Asia (India)</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">
+                                    $1.46 per month</span>
+
+                            </label>
+                            <label class="os-option">
+                                <input id="reginCheck6" value="1.29" onclick="reginCheck(6)" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">Australia (Sydney)</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">
+
+                                    $1.29 per month</span>
+
+                            </label>
+                            <hr>
+                        <p class=""><span class="fw-bold fs-3 popins">3. Storage Type</span>
+                        <p>
+                            <label class="os-option">
+                                <input  id="StorageCheck1" onclick="StorageCheck(1)" value="0.00" type="checkbox"
+                                    class="os-checkbox">
+                                <span class="os-name">400 GB SSD</span>
+                                <span class="os-badge">Free</span>
+                                <span class="os-price"></span>
+
+                            </label>
+                            <label  class="os-option">
+                                <input type="checkbox" onclick="StorageCheck(2)" id="StorageCheck2" value="3.69"
+                                    class="os-checkbox">
+                                <span class="os-name">150 GB NVMe</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$3.69 per month</span>
+
+                            </label>
+                            <label class="os-option">
+                                <input type="checkbox" onclick="StorageCheck(3)" id="StorageCheck3" value="4.20"
+                                    class="os-checkbox">
+                                <span class="os-name">600 GB SSD</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$4.20 per month</span>
+
+                            </label>
+                            <hr>
+                        <p class=""><span class="fw-bold fs-3 popins">4. Image</span>
+                        <p>
+                            <label class="os-option" >
+                                <input id="imageCheck1"  value="0.00" onclick="imageClick(1)" type="checkbox" class="os-checkbox">
+                                <span class="os-name">Ubuntu 24.04</span>
+                                <span class="os-badge">Free</span>
+                                <span class="os-price"></span>
+
+                            </label>
+                            <label class="os-option" >
+                                <input id="imageCheck2" value="13.59" onclick="imageClick(2)" type="checkbox"  value="$13.59" class="os-checkbox">
+                                <span class="os-name">Windows Server 2022 Datacenter</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$13.59 per month</span>
+
+                            </label>
+                            <label class="os-option" >
+                                <input id="imageCheck3" value="35.59" onclick="imageClick(3)" type="checkbox"  class="os-checkbox">
+                                <span class="os-name">cPanel/WHM (5 accounts)</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$35.59 per month</span>
+
+                            </label>
+                            <label class="os-option" > 
+                                <input id="imageCheck4" value="0.00" onclick="imageClick(4)" type="checkbox"  class="os-checkbox">
+                                <span class="os-name">Docker + Ubuntu 20.04</span>
+                                <span class="os-badge">Free</span>
+                                <span class="os-price"></span>
+
+                            </label>
+                            <label class="os-option" >
+                                <input id="imageCheck5" value="32.69" onclick="imageClick(5)" type="checkbox"class="os-checkbox">
+                                <span class="os-name">Plesk + Windows</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$32.69 per month</span>
+
+                            </label>
+                        <p class=""><span class="fw-bold fs-3 popins">5. Networking</span>
+                        <p>
+                            <label class="os-option">
+                                <input type="checkbox" onclick="networkCheck(1)" id="networkCheck1" value="0.00" class="os-checkbox">
+                                <span class="os-name">1 IP Address</span>
+                                <span class="os-badge">Free</span>
+                                <span class="os-price"></span>
+                            </label>
+                            <label class="os-option">
+                                <input type="checkbox" onclick="networkCheck(2)" id="networkCheck2" value="118.89" class="os-checkbox">
+                                <span class="os-name">1 IP Address + SSL certificate</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$118.89 /year</span>
+
+                            </label>
+                            <label class="os-option">
+                                <input type="checkbox" onclick="networkCheck(3)" id="networkCheck3" value="389.59" class="os-checkbox">
+                                <span class="os-name">1 IP Address + SSL certificate (wildcard)</span>
+                                <span class="os-badge">Paid</span>
+                                <span class="os-price">$389.59/year</span>
+
+                            </label>
+
+
+
+                    </div>
+
+                    <div class="item item_cal " data-aos="fade-up" >
+                        <div class="box-icon">
+                            <!-- <i class="bi bi-pc-display-horizontal "></i> -->
+                            <i class="bi bi-share-fill"></i>
+                            <!-- <i class="bi bi-pc-display"></i> -->
+                        </div>
+
+                        <p class="text-center"><span class="">Order Summary</span><br> <span
+                                class="fw-bold fs-3 popins">Cloud VDS M</span></p>
+                        <hr>
+                        <div class="Cloud">
+                            <div class="Cloud-left">Term Length :</div>
+                            <div class="Cloud-right">
+                                <span>
+                                    $<span id="inputTerm">0.00</span></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Cloud">
+                            <div class="Cloud-left">Region :</div>
+                            <div class="Cloud-right">
+                                <span>$<span id="inputRegin">0.00</span></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Cloud">
+                            <div class="Cloud-left">Storage :</div>
+                            <div class="Cloud-right">
+                                <span>$<span id="inputStorage">0.00</span>
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Cloud">
+                            <div class="Cloud-left">Image :</div>
+                            <div class="Cloud-right">
+                                <span>
+                                    $<span id="inputImage">0.00</span></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Cloud">
+                            <div class="Cloud-left">Networking :</div>
+                            <div class="Cloud-right">
+                                <span>
+                                    $<span id="inputNetwork">0.00</span></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Cloud">
+                            <div class="Cloud-left">Setup Fee :</div>
+                            <div class="Cloud-right">
+                                <span>
+                                    $2.27</span>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="text-center popins" style="margin-top: -6px;"><button onclick="Calculate()"
+                                class="btn-buy fw-bold text-white">Calculate Price</button>
+                        </div>
+
+                        <hr>
+                        <p class="text-green text-center" style="margin-bottom: 0px;">Latest Offer - Save
+                            0.0000%</p>
+
+                        <p class="text-center popins"><span class="fw-bold fs-1 ">$<span id="CalRs">0.00</span></span>/<span
+                                class="fw-bold"><span id="month"></span> <span id="month-id">Month</span></p>
+
+                        <div class="text-center popins" style="margin-top: -6px;">
+                            <a href="#"><button data-bs-toggle="modal" data-bs-target="#exampleModal
+                            " class="btn-buy btn-buy-1 fw-bold text-white t">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 fw-3 popins" id="exampleModalLabel">Payment Via QR Code</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modal-dialog modal-dialog-scrollable">
+                        <img src="image/QR-Buy.png" width="400px" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button> -->
+                        <button type="button" class="btn btn-success">Pay now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="chat-image" onclick="togglePopup()">
+        <img width="50" src="image/chart.png" alt="">
+    </div>
+    <div id="popup-chat" class="popup-chat" style="display: none;">
+        <img src="image/TLQR.png" alt="" width="100%"><br>
+        Contact Telegram
+    </div>
+
+
+    <br><br><br><br><br>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

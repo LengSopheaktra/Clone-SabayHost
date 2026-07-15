@@ -65,7 +65,6 @@ body {
   position: absolute;
   top: 200px;
   width: 100%;
-  height: 200px;
   background: rgb(255, 0, 0);
   padding: 40px;
 
@@ -79,12 +78,45 @@ body {
 }
 .down-footer-txt {
   position: absolute;
+  top: 370px;
   background-color: rgb(33, 20, 150);
   width: 100%;
   height: 200px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0 40px 0 40px;
+}
+.down-footer-txt > div {
+  width: 20%;
+  height: auto;
+  /* background-color: #0066ff; */
+}
+.form-mail {
+  width: 100%;
+  height: 100px;
+  /* background-color: rgb(0, 0, 0); */
+}
+.hov-text {
+  transition: 0.3s ease-in-out;
+}
+.hov-text:hover {
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.form-inside {
+  margin-top: -50px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+.down-footer-txt .form-mail {
+  width: 40%;
 }
 .main-content-footer {
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
   height: 1000px;
 }
@@ -722,9 +754,6 @@ body {
 }
 
 @media (max-width: 481px) {
-  .Hosting-data {
-    padding: 0 20px 0 20px;
-  }
   .Welcome {
     margin-top: 0;
   }

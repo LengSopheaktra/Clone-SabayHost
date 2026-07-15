@@ -7,12 +7,15 @@
 
 body {
   height: 100vh;
+  /* top: 30px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
+  background-color: #5ba4a9;
+  /* background-image: url(image/photo_2026-07-15_18-30-32.jpg); */
   background-size: 400% 400%;
-  animation: gradientMove 10s infinite alternate;
+  /* animation: gradientMove 10s infinite alternate; */
+  /* z-index: 100; */
 }
 
 @keyframes gradientMove {
@@ -30,13 +33,13 @@ body {
   align-items: center;
 }
 
-.card {
-  width: 350px;
+.card1 {
+  width: 400px;
   padding: 40px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 32px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18px);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0, 25);
   animation: cardAppear 1s ease;
@@ -54,11 +57,11 @@ body {
   }
 }
 
-.card:hover {
+.card1:hover {
   transform: translateY(-15px);
 }
 
-.icon {
+.icon1 {
   width: 80px;
   height: 80px;
   margin: auto;
@@ -68,45 +71,46 @@ body {
   align-items: center;
   border-radius: 50%;
   font-size: 3rem;
-  color: white;
+  color: rgb(0, 0, 0);
   background: rgb(95, 211, 159);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0, 3);
 }
 
-.card h2 {
-  color: white;
+.card1 h2 {
+  color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 
-.card p {
-  color: white;
+.card1 p {
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   margin-bottom: 1.2rem;
   opacity: 0.9;
 }
 
-.box {
+.box1 {
   background: rgba(255, 255, 255, 0.3);
   padding: 12px;
   margin-bottom: 12px;
   border-radius: 12px;
-  color: white;
+  color: rgb(0, 0, 0);
   backdrop-filter: blur(5px);
 }
 
-.btn-home {
+.btn-home1 {
   margin-top: 15px;
   padding: 12px;
   border: none;
-  border-radius: 28px;
-  color: white;
+  border-radius: 12px;
+  color: black;
   font-size: 15px;
   cursor: pointer;
   background: rgb(95, 211, 159);
   transition: 0.3s;
+  text-decoration: none;
 }
 
-.btn-home:hover {
+.btn-home1:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0, 3);
 }

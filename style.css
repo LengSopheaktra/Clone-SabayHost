@@ -6,6 +6,9 @@
 :root {
   --green: #7ebc12;
 }
+a {
+  text-decoration: none;
+}
 @font-face {
   font-family: Poppins;
   src: url(font/POPPINS-SEMIBOLD.TTF);
@@ -23,7 +26,7 @@
   font-family: Poppins;
 }
 body {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   /* font-family: Poppins; */
   position: relative;
 }
@@ -52,6 +55,13 @@ body {
 .bg > div > img {
   max-width: 1350px;
 }
+
+.form-inside {
+  margin: auto;
+  border-radius: 15px;
+  padding: 30px;
+}
+
 .bg-footer {
   /* background-color: red; */
   position: relative;
@@ -61,11 +71,14 @@ body {
   z-index: -1;
   overflow: hidden;
 }
+.test {
+  background-color: red;
+}
 .footer-item {
   position: absolute;
   top: 200px;
   width: 100%;
-  background: rgb(255, 0, 0);
+  /* background: rgb(255, 0, 0); */
   padding: 40px;
 
   display: flex;
@@ -79,7 +92,7 @@ body {
 .down-footer-txt {
   position: absolute;
   top: 370px;
-  background-color: rgb(33, 20, 150);
+  /* background-color: rgb(33, 20, 150); */
   width: 100%;
   height: 200px;
 
@@ -111,6 +124,7 @@ body {
   width: 300px;
   height: 300px;
   background-color: white;
+  box-shadow: 0 0 5px 1px #0066ff;
 }
 .down-footer-txt .form-mail {
   width: 40%;
@@ -118,7 +132,7 @@ body {
 .main-content-footer {
   /* background-color: black; */
   width: 100%;
-  height: 1000px;
+  height: 700px;
 }
 .la-input {
   width: 100%;
@@ -388,9 +402,12 @@ body {
   max-width: 1200px;
   margin: auto;
   margin-top: 40px;
-  padding: 30px;
+  padding-right: 30px;
 }
 .box-Configure {
+  /* background-color: red; */
+  /* overflow: hidden; */
+  /* background-color: red; */
   grid-template-columns: 65fr 30fr;
 }
 .box-1-2 {
@@ -483,7 +500,9 @@ body {
 .bi-share-fill {
   color: white;
 }
-
+.shared-content {
+  /* background-color: #0066ff; */
+}
 .btn-success {
   width: 100%;
   background-color: #7ebc12;
@@ -673,6 +692,15 @@ body {
   height: 20px;
   flex-shrink: 0;
 }
+.social-icons a {
+  display: inline-flex;
+  padding: 10px;
+  border-radius: 8px;
+  border: #ccc solid 2px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 @media (max-width: 1023px) {
   body {
@@ -683,6 +711,12 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .down-footer-txt {
+    flex-wrap: nowrap;
+  }
+  .down-footer-txt > div {
+    width: 100%;
+  }
   .box-about-up,
   .box-about-down {
     flex-direction: column;
@@ -754,22 +788,25 @@ body {
 }
 
 @media (max-width: 481px) {
-  .Welcome {
-    margin-top: 0;
-  }
   .box-item {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .box-item > .item {
-    width: 100%;
-  }
-  .item {
-    padding: 30px 20px 20px 20px;
-  }
-  .content-right > img {
-    width: 100%;
-  }
-  .sh-Hosting {
-    padding: 20px;
+    padding: 0;
+    .Welcome {
+      margin-top: 0;
+    }
+    .box-item {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .box-item > .item {
+      width: 100%;
+    }
+    .item {
+      padding: 30px 20px 20px 20px;
+    }
+    .content-right > img {
+      width: 100%;
+    }
+    .sh-Hosting {
+      padding: 20px;
+    }
   }
 }

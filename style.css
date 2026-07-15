@@ -59,6 +59,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: -1;
+  overflow: hidden;
 }
 .footer-item {
   position: absolute;

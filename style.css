@@ -767,9 +767,6 @@ body {
     opacity: 1;
   }
 }
-.pandingQR {
-  /* display: none; */
-}
 .done_QR {
   display: none;
 }
@@ -922,6 +919,9 @@ body {
 }
 
 @media (max-width: 481px) {
+  .item-qr {
+    top: 30px;
+  }
   .box-item {
     padding: 0;
     .Welcome {

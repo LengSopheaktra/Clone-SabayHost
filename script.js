@@ -156,8 +156,7 @@ function networkCheck(n) {
   document.getElementById("inputNetwork").innerText = rsNetwork;
 }
 let SetupFee = 2.27;
-
-function Calculate() {
+function totalCalculate() {
   let Calculate =
     parseFloat(rsRegin) +
     parseFloat(rsStorege) +
@@ -165,10 +164,40 @@ function Calculate() {
     parseFloat(rsImage) +
     parseFloat(rsNetwork) +
     parseFloat(SetupFee);
+  return Calculate;
+}
+function Calculate() {
+  document.getElementById("CalRs").innerText = totalCalculate().toFixed(2);
+}
+function buyNow() {
+  document.querySelector(".pay-qr").style.display = "block";
 
-  document.getElementById("CalRs").innerText = Calculate.toFixed(2);
+  document.getElementById("qr_price").innerText = totalCalculate().toFixed(2);
 }
 
+let Close = document.querySelector("bi-x-lg");
+
+Close.addEventListener("click", () => {
+  document.querySelector(".pay-qr").style.display = "none";
+});
+function CloseQR() {
+  document.querySelector(".pay-qr").style.display = "none";
+}
+function doneQR() {
+  document.querySelector(".pandingQR").style.display = "none";
+  document.querySelector(".succesQR").style.display = "block";
+
+  document.getElementById("total_price").innerText =
+    totalCalculate().toFixed(2);
+  document.getElementById("orderID").innerText = (Math.random() * 100).toFixed(
+    0,
+  );
+}
+function confirmQR() {
+  document.querySelector(".pandingQR").style.display = "block";
+  document.querySelector(".succesQR").style.display = "none";
+  document.querySelector(".pay-qr").style.display = "none";
+}
 // Loign
 const container = document.querySelector(".container10");
 const registerBtn = document.querySelector(".register-btn");

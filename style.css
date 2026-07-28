@@ -742,13 +742,13 @@ body {
 .item-qr {
   position: relative;
   position: fixed;
-  top: 10%;
+  top: 10px;
   left: 50%;
   width: 450px;
 
   border-radius: 20px;
   /* transform: translateX(-50%); */
-  transform: translateX(-50%) scale(0.9);
+  transform: translateX(-50%) scale(0.8);
   background-color: white;
   margin: auto;
   padding: 30px 30px;
@@ -763,7 +763,7 @@ body {
   }
 
   to {
-    transform: translateX(-50%) scale(0.9);
+    transform: translateX(-50%) scale(0.8);
     opacity: 1;
   }
 }

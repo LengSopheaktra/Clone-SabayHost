@@ -919,8 +919,8 @@ body {
 }
 
 @media (max-width: 481px) {
-  .item-qr {
-    top: 30px;
+  .item-qr {  
+    top: -10px;
     transform: translateX(-50%) scale(0.7);
   }
   @keyframes zoomIn {
